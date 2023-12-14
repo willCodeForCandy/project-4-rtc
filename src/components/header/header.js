@@ -1,4 +1,5 @@
 import { headerLinks } from '../../data/headerLinks';
+import { toggler } from '../mode-toggler/mode-toggler';
 import './header.css';
 
 const highlighters = ['yellow', 'blue', 'pink'];
@@ -21,4 +22,5 @@ export const createHeader = () => {
   nav.append(ul);
   $header.append(nav);
   $body.prepend($header);
+  toggler($header);
 };

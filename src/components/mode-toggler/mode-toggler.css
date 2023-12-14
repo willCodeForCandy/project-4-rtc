@@ -1,0 +1,48 @@
+#mode-toggler {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  height: 50px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+#mode-toggler img {
+  height: 100%;
+  width: 100%;
+}
+
+#mode-toggler:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#mode-light,
+#mode-dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border: 1px solid var(--primary-dark);
+  border-radius: 50%;
+}
+
+#mode-light {
+  background-color: var(--primary-light);
+}
+
+#mode-dark {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: rotateY(180deg);
+}
