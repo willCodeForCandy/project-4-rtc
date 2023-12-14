@@ -13,7 +13,7 @@ export const createHeader = () => {
     const a = document.createElement('a');
     a.textContent = link.name;
     a.href = link.url;
-    li.classList.add('highlighter', highlighters[index]);
+    li.classList.add('highlighter', highlighters[index % highlighters.length]);
     li.append(a);
     ul.append(li);
     li.addEventListener('click', link.page);

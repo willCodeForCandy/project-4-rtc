@@ -20,14 +20,53 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
 body {
   background-image: url(/assets/dot-grid.png);
   min-height: 100svh;
   width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+/* Estilos resaltadores */
+.highlighter {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.highlighter:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  height: 70%;
+  left: -8px;
+  bottom: 16%;
+  width: 0%;
+  opacity: 0.4;
+  transition: width 0.5s;
+  transform: skewY(355deg);
+}
+.yellow:after {
+  background: var(--highlighter-yellow);
+}
+
+.pink:after {
+  background: var(--highlighter-pink);
+}
+
+.blue:after {
+  background: var(--highlighter-blue);
+}
+
+.highlighter:hover:after {
+  width: 120%;
 }
