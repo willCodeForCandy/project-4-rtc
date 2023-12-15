@@ -3,17 +3,24 @@
   src: url(/assets/Caveat/Caveat-VariableFont_wght.ttf) format('truetype');
 }
 :root {
+  /* Colors */
   --primary-light: #faf9f6;
   --primary-dark: #242424;
   --highlighter-yellow: #fbff2b;
   --highlighter-blue: #3cdfff;
   --highlighter-pink: #fb62f3;
-  font-family: Caveat, Helvetica, Arial, sans-serif;
-  line-height: 1.3;
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--primary-dark);
-  background-color: var(--primary-light);
+
+  /* Spacings */
+  --spacing-xl: 50px;
+  --spacing-lg: 30px;
+  --spacing-md: 20px;
+  --spacing-sm: 10px;
+  --spacing-xs: 5px;
+
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
 }
 
 * {
@@ -30,6 +37,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  font-family: Caveat, Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 20px;
 }
 body::before {
   content: ' ';
@@ -48,6 +61,10 @@ body::before {
 a {
   text-decoration: none;
   color: var(--primary-dark);
+}
+
+p {
+  backdrop-filter: blur(2px);
 }
 
 /* Estilos resaltadores */
@@ -81,8 +98,17 @@ a {
   background: var(--highlighter-blue);
 }
 
-.highlighter:hover:after {
+.highlighter:hover:after,
+.highlighted:after {
   width: 120%;
+}
+
+/* Estilos fotos Polaroid */
+.polaroid {
+  background: #fff;
+  padding: var(--spacing-sm);
+  width: fit-content;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 /* Tema oscuro */
 body.dark {

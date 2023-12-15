@@ -9,11 +9,11 @@ export const socials = [
     url: 'https://www.linkedin.com/in/virginia-raschia-545196280/',
     icon: '../assets/icons8-linkedin-48.png'
   },
-  {
-    name: '(not X)',
-    url: 'https://twitter.com/virginia7_9',
-    icon: '../assets/icons8-twitter-squared-48.png'
-  },
+  // {
+  //   name: '(not X)',
+  //   url: 'https://twitter.com/virginia7_9',
+  //   icon: '../assets/icons8-twitter-squared-48.png'
+  // },
   {
     name: 'gitHub',
     url: 'https://github.com/willCodeForCandy',

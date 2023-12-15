@@ -2,7 +2,7 @@ import { headerLinks } from '../../data/headerLinks';
 import { toggler } from '../mode-toggler/mode-toggler';
 import './header.css';
 
-const highlighters = ['yellow', 'blue', 'pink'];
+export const highlighters = ['yellow', 'blue', 'pink'];
 
 export const createHeader = () => {
   const $body = document.querySelector('body');
@@ -23,4 +23,12 @@ export const createHeader = () => {
   $header.append(nav);
   $body.prepend($header);
   toggler($header);
+};
+
+export const decorateLinks = (activeLink) => {
+  const links = document.querySelectorAll('li.highlighter');
+  for (const link of links) {
+    link.classList.remove('highlighted');
+  }
+  activeLink.target.parentElement.classList.add('highlighted');
 };
