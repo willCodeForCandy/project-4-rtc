@@ -3,20 +3,25 @@ import { myProjects } from '../../data/myProjects';
 import './Projects.css';
 
 const createProjectTemplate = (project, color) => `
-<article class="project-container">
+<article class="project-container flex-container">
   <h2 class="project-name ${color} slidein">${project.title}</h2>
-  <div class="project-description">
+  <div class="project-description flex-container">
     <div class="polaroid project-image-container">
-      <img src="${project.screenshot}" alt="${project.imgDescription}">
-      <div class="overlay">
-          <a href="${project.liveUrl}" target="_blank" rel="noopener">Ver live</a>
+      <div>
+        <img src="${project.screenshot}" alt="${project.imgDescription}">
+        <a href="${project.liveUrl}" class="overlay" target="_blank" rel="noopener">
+          <span>Ver live</span>
+        </a>
       </div>
       <div class="drawer">
-          <a href="${project.gitHubUrl}" class="view-code"  target="_blank" rel="noopener"><img src="/assets/icons8-code-100.png">Ver código</a>
+          <a href="${project.gitHubUrl}" class="view-code"  target="_blank" rel="noopener">
+            <img src="/assets/icons8-code-100.png">
+            Ver código
+          </a>
       </div>
     </div>
     <div class="project-details">
-      ${project.description}
+      <p>${project.description}</p>
     </div>
   </div>
 </article>
@@ -26,7 +31,7 @@ const createProjectsSection = (projectList, colorList) => {
   const main = document.querySelector('#app');
   const $projectsContainer = document.createElement('section');
   $projectsContainer.id = 'proyectos';
-  $projectsContainer.classList.add('article-container');
+  $projectsContainer.classList.add('article-container', 'flex-container');
 
   projectList.forEach((element, index) => {
     const colorIndex = index % colorList.length;
