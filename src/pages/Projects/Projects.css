@@ -1,3 +1,12 @@
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .article-container {
   position: relative;
   margin-bottom: 50px;
@@ -26,8 +35,10 @@
 .project-name {
   width: 100%;
 }
-.project-name:after {
-  width: 100%;
+
+.slidein:after {
+  width: 0%;
+  animation: slideIn 2s 1s forwards;
   transform: skewx(-10deg) skewY(-0.5deg);
 }
 .overlay {

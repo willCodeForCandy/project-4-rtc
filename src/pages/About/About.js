@@ -18,4 +18,5 @@ export const About = (ev) => {
   `;
   main.innerHTML = '';
   main.append($aboutContainer);
+  $aboutContainer.classList.add('fade-in');
 };

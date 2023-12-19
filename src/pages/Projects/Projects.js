@@ -42,6 +42,7 @@ const createProjectsSection = (projectList, colorList) => {
   });
   main.innerHTML = '';
   main.append($projectsContainer);
+  $projectsContainer.classList.add('fade-in');
 };
 
 export const Projects = (ev) => {
