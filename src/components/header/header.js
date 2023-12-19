@@ -25,10 +25,10 @@ export const createHeader = () => {
   toggler($header);
 };
 
-export const decorateLinks = (activeLink) => {
+export const decorateLinks = () => {
   const links = document.querySelectorAll('li.highlighter');
   for (const link of links) {
     link.classList.remove('highlighted');
   }
-  activeLink.target.parentElement.classList.add('highlighted');
+  // activeLink.target.parentElement.classList.add('highlighted');
 };

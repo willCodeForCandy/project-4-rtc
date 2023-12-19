@@ -45,7 +45,9 @@ const createProjectsSection = (projectList, colorList) => {
   $projectsContainer.classList.add('fade-in');
 };
 
-export const Projects = (ev) => {
-  decorateLinks(ev);
+export const Projects = () => {
+  decorateLinks();
+  const projectsNav = document.querySelector('a[href="#Projects"]');
+  projectsNav.parentElement.classList.add('highlighted');
   return createProjectsSection(myProjects, highlighters);
 };

@@ -1,8 +1,10 @@
 import { decorateLinks } from '../../components/header/header';
 import './About.css';
 
-export const About = (ev) => {
-  decorateLinks(ev);
+export const About = () => {
+  decorateLinks();
+  const aboutNav = document.querySelector('a[href="#aboutMe"]');
+  aboutNav.parentElement.classList.add('highlighted');
   const profilePic = '/assets/IMG_20221005_145041312.jpg';
   const main = document.querySelector('#app');
   const $aboutContainer = document.createElement('section');
