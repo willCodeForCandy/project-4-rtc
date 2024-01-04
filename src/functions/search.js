@@ -11,8 +11,8 @@ export const search = (e) => {
       project.description.toLowerCase().includes(query.toLowerCase()) ||
       project.title.toLowerCase().includes(query.toLowerCase())
   );
-  const navItems = document.querySelector('header li.highlighter');
-  navItems.classList.remove('highlighted');
+  const navItem = document.querySelector('header li.highlighted');
+  navItem.classList.remove('highlighted');
   const searchInfo = document.createElement('h3');
   searchInfo.classList.add('search-info');
   if (filteredProjects.length > 0) {
