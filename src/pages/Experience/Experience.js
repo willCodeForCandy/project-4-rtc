@@ -21,7 +21,7 @@ const createExperienceSection = (experienceList) => {
   const main = document.querySelector('#app');
   const $experienceContainer = document.createElement('section');
   $experienceContainer.id = 'experiencia';
-  $experienceContainer.classList.add('article-container');
+  $experienceContainer.classList.add('flex-container');
 
   experienceList.forEach((element) => {
     $experienceContainer.append(experienceCard(element));

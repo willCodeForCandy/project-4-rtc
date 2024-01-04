@@ -1,0 +1,28 @@
+#experiencia {
+  padding: var(--spacing-sm);
+}
+
+#experiencia > article {
+  width: 500px;
+  aspect-ratio: 2/1;
+  max-width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--primary-light);
+  justify-content: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+#experiencia > article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-dark);
+  opacity: 0.7;
+}

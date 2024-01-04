@@ -1,6 +1,9 @@
 header.flex-container {
   justify-content: center;
   padding: var(--spacing-md);
+  position: sticky;
+  top: 0;
+  height: 120px;
 }
 header > nav {
   flex-grow: 1;
