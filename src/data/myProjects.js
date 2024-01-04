@@ -42,7 +42,7 @@ export const myProjects = [
   {
     title: 'Rockterest',
     description:
-      '¡Primer proyecto con async! En el proyecto 3 usamos la API de Unsplash para crear una página similar a Pinterest que cargue las imágenes de forma dinámica y utilice el motor de búsqueda de Unsplash.<br>PD: si buscas algo muy, muy raro, tal vez encuentres una sorpresa ;)',
+      '¡Primer proyecto con async! En el proyecto 3 usamos la API de Unsplash para crear una página similar a Pinterest que cargue las imágenes de forma dinámica y utilice el motor de búsqueda de Unsplash.<br>PD: si buscas algo muy, muy raro, tal vez encuentres una sorpresa 😉',
     screenshot: '/assets/rockterest.png',
     technologies: ['html', 'css', 'js'],
     imgDescription: 'Screenshot mock-Pinterest desktop',
