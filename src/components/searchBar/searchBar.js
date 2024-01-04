@@ -1,3 +1,4 @@
+import { search } from '../../functions/search';
 import './searchBar.css';
 
 export const searchBar = () => {
@@ -12,7 +13,7 @@ export const searchBar = () => {
   searchIcon.addEventListener('click', () => {
     searchBar.classList.toggle('visible');
   });
-  // searchBar.addEventListener('click', search);
+  searchBar.addEventListener('change', search);
   searchBarContainer.append(searchIcon, searchBar);
   const body = document.querySelector('body');
   body.append(searchBarContainer);

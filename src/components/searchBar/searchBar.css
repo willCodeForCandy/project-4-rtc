@@ -32,3 +32,9 @@
   width: 200px;
   margin-left: var(--spacing-sm);
 }
+
+h3.search-info {
+  padding: var(--spacing-md);
+  font-size: 40px;
+  font-weight: 400;
+}

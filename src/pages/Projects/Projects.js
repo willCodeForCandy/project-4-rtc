@@ -27,7 +27,7 @@ const createProjectTemplate = (project, color) => `
 </article>
 `;
 
-const createProjectsSection = (projectList, colorList) => {
+export const createProjectsSection = (projectList, colorList) => {
   const main = document.querySelector('#app');
   const $projectsContainer = document.createElement('section');
   $projectsContainer.id = 'proyectos';
