@@ -30,5 +30,4 @@ export const decorateLinks = () => {
   for (const link of links) {
     link.classList.remove('highlighted');
   }
-  // activeLink.target.parentElement.classList.add('highlighted');
 };

@@ -19,7 +19,9 @@
 .project-description {
   margin: 0 var(--spacing-sm);
 }
-
+body.dark .project-image-container a {
+  color: var(--primary-dark);
+}
 .project-image-container > div {
   position: relative;
   margin: 0 auto;
