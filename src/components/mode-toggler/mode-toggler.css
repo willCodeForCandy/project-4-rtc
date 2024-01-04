@@ -1,7 +1,7 @@
 #mode-toggler {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
   height: 50px;
   aspect-ratio: 1;
   overflow: hidden;
@@ -45,4 +45,12 @@
   background-color: var(--primary-dark);
   color: white;
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  #mode-toggler {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }

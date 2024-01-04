@@ -1,7 +1,7 @@
 #search {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
   height: 50px;
   overflow: hidden;
   cursor: pointer;
@@ -37,4 +37,12 @@ h3.search-info {
   padding: var(--spacing-md);
   font-size: 40px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  #search {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }

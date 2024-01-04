@@ -10,4 +10,3 @@ import './style.css';
 createHeader();
 renderFooter(socials);
 About();
-searchBar();

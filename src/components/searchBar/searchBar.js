@@ -1,7 +1,7 @@
 import { search } from '../../functions/search';
 import './searchBar.css';
 
-export const searchBar = () => {
+export const searchBar = (parentElement) => {
   const searchBarContainer = document.createElement('div');
   searchBarContainer.id = 'search';
   searchBarContainer.className = 'flex-container';
@@ -15,6 +15,5 @@ export const searchBar = () => {
   });
   searchBar.addEventListener('change', search);
   searchBarContainer.append(searchIcon, searchBar);
-  const body = document.querySelector('body');
-  body.append(searchBarContainer);
+  parentElement.append(searchBarContainer);
 };
