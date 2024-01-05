@@ -19,5 +19,10 @@ export const toggler = (parentElement) => {
   parentElement.append(togglerContainer);
   togglerContainer.addEventListener('click', () => {
     document.body.classList.toggle('dark');
+    if (document.body.className === 'dark') {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', '');
+    }
   });
 };
