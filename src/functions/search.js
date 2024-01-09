@@ -6,44 +6,29 @@ import { renderSearchResults } from '../pages/searchResults/searchResults';
 
 const searchEngine = (query) => {
   const searchResults = [];
-  myProjects.forEach((project) => {
+
+  const processProject = (project, section) => {
     for (const key in project) {
-      if (typeof project[key] === 'string') {
-        if (project[key].toLowerCase().includes(query.toLowerCase())) {
-          if (!searchResults.includes(project)) {
-            project['section'] = 'projects';
-            searchResults.push(project);
-          }
+      const projectValue = project[key];
+      const isString = typeof projectValue === 'string';
+
+      if (
+        (isString &&
+          projectValue.toLowerCase().includes(query.toLowerCase())) ||
+        (!isString && projectValue.includes(query.toLowerCase()))
+      ) {
+        if (!searchResults.includes(project)) {
+          project['section'] = section;
+          searchResults.push(project);
         }
-      } else {
-        if (project[key].includes(query.toLowerCase())) {
-          if (!searchResults.includes(project)) {
-            project['section'] = 'projects';
-            searchResults.push(project);
-          }
-        }
+        break;
       }
     }
-  });
-  myExperience.forEach((project) => {
-    for (const key in project) {
-      if (typeof project[key] === 'string') {
-        if (project[key].toLowerCase().includes(query.toLowerCase())) {
-          if (!searchResults.includes(project)) {
-            project['section'] = 'experience';
-            searchResults.push(project);
-          }
-        }
-      } else {
-        if (project[key].includes(query.toLowerCase())) {
-          if (!searchResults.includes(project)) {
-            project['section'] = 'experience';
-            searchResults.push(project);
-          }
-        }
-      }
-    }
-  });
+  };
+
+  myProjects.forEach((project) => processProject(project, 'projects'));
+  myExperience.forEach((project) => processProject(project, 'experience'));
+
   return searchResults;
 };
 export const search = (e) => {
