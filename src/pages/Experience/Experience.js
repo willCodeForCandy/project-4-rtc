@@ -8,8 +8,8 @@ const experienceCard = (experienceInfo) => {
   const title = document.createElement('h2');
   const duration = document.createElement('p');
   const description = document.createElement('p');
-  title.innerText = experienceInfo.role;
-  duration.innerText = experienceInfo.date;
+  title.innerText = experienceInfo.title;
+  duration.innerText = experienceInfo.description;
   description.innerText = experienceInfo.company;
   container.style.backgroundImage = `url(${experienceInfo.image})`;
   container.append(title, duration, description);

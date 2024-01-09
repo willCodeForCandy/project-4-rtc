@@ -1,14 +1,14 @@
 export const myExperience = [
   {
-    role: 'Fontanera',
+    title: 'Fontanera',
     company: 'Reino Champiñón',
-    date: '2020 - actualidad',
+    description: '2020 - actualidad',
     image: '/assets/super-mario.png'
   },
   {
-    role: 'Secretaria',
+    title: 'Secretaria',
     company: 'Consultorio de oftalmología',
-    date: '2015 - 2020',
+    description: '2015 - 2020',
     image: '/assets/secretaria.webp'
   }
 ];
