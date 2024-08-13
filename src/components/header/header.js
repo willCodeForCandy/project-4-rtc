@@ -21,18 +21,10 @@ export const createHeader = () => {
     li.classList.add('highlighter', highlighters[index % highlighters.length]);
     li.append(a);
     ul.append(li);
-    li.addEventListener('click', link.page);
   });
   nav.append(ul);
   $header.append(nav, extras);
   $body.prepend($header);
   searchBar(extras);
   toggler(extras);
-};
-
-export const decorateLinks = () => {
-  const links = document.querySelectorAll('li.highlighter');
-  for (const link of links) {
-    link.classList.remove('highlighted');
-  }
 };

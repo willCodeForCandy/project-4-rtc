@@ -1,7 +1,7 @@
-import { search } from '../../functions/search';
+import { search } from '../../helpers/search';
 import './searchBar.css';
 
-export const searchBar = (parentElement) => {
+export const searchBar = parentElement => {
   const searchBarContainer = document.createElement('div');
   searchBarContainer.id = 'search';
   searchBarContainer.className = 'flex-container';

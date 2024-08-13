@@ -1,8 +1,8 @@
-import { decorateLinks } from '../../components/header/header';
 import { myExperience } from '../../data/experience';
+import { decorateLinks } from '../../helpers/decorateLinks';
 import './Experience.css';
 
-const experienceCard = (experienceInfo) => {
+const experienceCard = experienceInfo => {
   const container = document.createElement('article');
   container.classList.add('flex-container', 'experience');
   const title = document.createElement('h2');
@@ -17,13 +17,13 @@ const experienceCard = (experienceInfo) => {
   return container;
 };
 
-const createExperienceSection = (experienceList) => {
+const createExperienceSection = experienceList => {
   const main = document.querySelector('#app');
   const $experienceContainer = document.createElement('section');
   $experienceContainer.id = 'experiencia';
   $experienceContainer.classList.add('flex-container');
 
-  experienceList.forEach((element) => {
+  experienceList.forEach(element => {
     $experienceContainer.append(experienceCard(element));
   });
   main.innerHTML = '';

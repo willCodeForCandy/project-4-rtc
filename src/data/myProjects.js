@@ -1,33 +1,23 @@
 export const myProjects = [
   {
-    title: 'Landing page',
+    title: 'Rockterest',
     description:
-      'Mi primer proyecto para Rock{The Code} fue un clon de la web de Imdb, usando únicamente HTML y CSS.<br>El mayor reto en este proyecto fue la creación de elementos dinámicos como un carousel y un menú hamburguesa.',
-    screenshot: '/assets/clon-imdb.png',
-    technologies: ['html', 'css'],
-    imgDescription: 'Screenshot clon Imdb desktop',
-    gitHubUrl: 'https://github.com/willCodeForCandy/ejemplos-git-pmba',
-    liveUrl: 'https://clon-imdb.netlify.app/'
-  },
-  {
-    title: 'Landing page God Of War',
-    description:
-      'En una segunda iteración, reproduje un diseño de Figma que me pareció atractivo.',
-    screenshot: '/assets/gow-landing.png',
-    technologies: ['html', 'css'],
-    imgDescription: 'Screenshot landing GOW',
-    gitHubUrl: 'https://github.com/willCodeForCandy/Project-1-GOW',
-    liveUrl: 'https://project-1-gow.netlify.app/'
+      '¡Primer proyecto con async! En este proyecto, usé la API de Unsplash para crear una página similar a Pinterest que cargue las imágenes de forma dinámica y utilice el motor de búsqueda de Unsplash.<br>PD: si buscas algo muy, muy raro, tal vez encuentres una sorpresa 😉',
+    screenshot: '/assets/rockterest.png',
+    technologies: ['html', 'css', 'js'],
+    imgDescription: 'Screenshot mock-Pinterest desktop',
+    gitHubUrl: 'https://github.com/willCodeForCandy/project-3-pinterest',
+    liveUrl: 'https://rockterest.netlify.app/',
   },
   {
     title: 'Tienda con filtro',
     description:
-      'En el segundo proyecto, incorporamos js a la mezcla. El objetivo era crear una tienda de manera dinámica a partir de una pseudo-base de datos (un objeto) y luego agregar filtros de búsqueda. <br> En este caso, la víctima fue PC Componentes.',
+      'Uno de mis primeros proyectos con js. El objetivo era crear una tienda de manera dinámica a partir de un mock de base de datos y luego agregar filtros de búsqueda. <br> En este caso, la víctima fue PC Componentes.',
     screenshot: '/assets/proyecto-2.png',
     technologies: ['html', 'css', 'js'],
     imgDescription: 'Screenshot tienda con filtro desktop',
     gitHubUrl: 'https://github.com/willCodeForCandy/proyecto-prework-2',
-    liveUrl: 'https://proyecto2pc-componentes.netlify.app/'
+    liveUrl: 'https://proyecto2pc-componentes.netlify.app/',
   },
   {
     title: 'Tienda con filtro v2',
@@ -37,17 +27,7 @@ export const myProjects = [
     technologies: ['html', 'css', 'js'],
     imgDescription: 'Screenshot tienda de arte con filtro mobile',
     gitHubUrl: '',
-    liveUrl: 'https://tpmba-gallery-project.netlify.app/'
-  },
-  {
-    title: 'Rockterest',
-    description:
-      '¡Primer proyecto con async! En el proyecto 3 usamos la API de Unsplash para crear una página similar a Pinterest que cargue las imágenes de forma dinámica y utilice el motor de búsqueda de Unsplash.<br>PD: si buscas algo muy, muy raro, tal vez encuentres una sorpresa 😉',
-    screenshot: '/assets/rockterest.png',
-    technologies: ['html', 'css', 'js'],
-    imgDescription: 'Screenshot mock-Pinterest desktop',
-    gitHubUrl: 'https://github.com/willCodeForCandy/project-3-pinterest',
-    liveUrl: 'https://rockterest.netlify.app/'
+    liveUrl: 'https://tpmba-gallery-project.netlify.app/',
   },
   {
     title: 'Selector de colores',
@@ -57,7 +37,7 @@ export const myProjects = [
     technologies: ['html', 'css', 'js'],
     imgDescription: 'Screenshot ejercicio color picker mobile',
     gitHubUrl: 'https://github.com/willCodeForCandy/color-flipper',
-    liveUrl: 'https://colorpickerexercise.netlify.app/'
+    liveUrl: 'https://colorpickerexercise.netlify.app/',
   },
   {
     title: 'Password checker',
@@ -67,6 +47,26 @@ export const myProjects = [
     technologies: ['html', 'css', 'js'],
     imgDescription: 'Screenshot ejercicio password mobile',
     gitHubUrl: 'https://github.com/willCodeForCandy/bluring',
-    liveUrl: 'https://buring-passcode.netlify.app/'
-  }
+    liveUrl: 'https://buring-passcode.netlify.app/',
+  },
+  {
+    title: 'Landing page',
+    description:
+      'Mi primer proyecto para Rock{The Code} fue un clon de la web de Imdb, usando únicamente HTML y CSS.<br>El mayor reto en este proyecto fue la creación de elementos dinámicos como un carousel y un menú hamburguesa.<br> Fun fact: la primera vez que me pidieron hacer un menú hamburguesa, pensé que se trataba de un menú para una hamburguesería y entregué un par de listas con títulos y un fondo de hamburguesas.',
+    screenshot: '/assets/clon-imdb.png',
+    technologies: ['html', 'css'],
+    imgDescription: 'Screenshot clon Imdb desktop',
+    gitHubUrl: 'https://github.com/willCodeForCandy/ejemplos-git-pmba',
+    liveUrl: 'https://clon-imdb.netlify.app/',
+  },
+  {
+    title: 'Landing page God Of War',
+    description:
+      'Primer proyecto, v2. Reproduje un diseño de Figma que me pareció atractivo.',
+    screenshot: '/assets/gow-landing.png',
+    technologies: ['html', 'css'],
+    imgDescription: 'Screenshot landing GOW',
+    gitHubUrl: 'https://github.com/willCodeForCandy/Project-1-GOW',
+    liveUrl: 'https://project-1-gow.netlify.app/',
+  },
 ];
