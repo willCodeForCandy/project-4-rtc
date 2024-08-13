@@ -13,9 +13,9 @@ export const headerLinks = [
     url: '#Projects',
     page: Projects,
   },
-  {
-    name: 'Experience',
-    url: '#Experience',
-    page: Experience,
-  },
+  // {
+  //   name: 'Experience',
+  //   url: '#Experience',
+  //   page: Experience,
+  // },
 ];

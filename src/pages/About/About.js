@@ -2,7 +2,6 @@ import { decorateLinks } from '../../helpers/decorateLinks';
 import './About.css';
 
 export const About = () => {
-  console.log(window.location);
   decorateLinks();
   const aboutNav = document.querySelector('a');
   aboutNav.parentElement.classList.add('highlighted');
